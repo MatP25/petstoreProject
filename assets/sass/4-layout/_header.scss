@@ -1,0 +1,40 @@
+////////////////////////////////////
+@use "../1-abstracts/" as *;
+////////////////////////////////////
+
+.header-wrapper {
+    background-color: cornflowerblue;
+    min-height: 6rem;
+    @include flex-properties(row,nowrap,space-between,center);
+    .header__header {
+        width: 100%;
+        @include flex-properties(row,nowrap,space-between,center);
+        .menuToggle {
+            border: 2px solid rgb(56, 54, 54);
+            margin: .5em;
+            i{
+                font-size: 1.5em;
+            }
+        }
+        .header__h1 {
+            margin-right:auto;
+            padding: 1em;
+            h1 {
+                text-align: center;
+                font-size:2em;
+            }
+        }
+        .header__searchbar {
+            
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .menuToggle {
+        display: none;
+    }
+}

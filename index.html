@@ -6,123 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pet Store</title>
-
-    <!-- BOOTSTRAP CSS only -->
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- OWN CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- OWN JS -->
+    <!-- JS -->
     <script src="./assets/js/main.js" defer></script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/38aa5218dc.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">ABOUT THIS PAGE</a>
+
+    <div class="nav-wrapper container-fluid p-0">
+        <nav class="top-nav">
+            <ul class="horizontal-list">
+                <li class="horizontal-list__item"> <a  href="#">About This Website</a> </li>
+                <li class="horizontal-list__item"> <a  href="#">About us</a> </li>
+                <li class="horizontal-list__item"> <a  href="#">Stores</a> </li>
+                <li class="horizontal-list__item"> <a  href="#">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- HEADER -->
+    <div class="header-wrapper container-fluid">
+
+        <header class="header__header">
+            <button class="btn menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <span><i class="fa-solid fa-paw"></i></span>
+            </button>
+            <div class="header__h1">
+                <h1>PET STORE</h1>
+            </div>
+            <form class="d-flex header__searchbar"  role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </header>
+
+    </div>
+
+    <!-- OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start text-bg-dark " tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">PET STORE</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- offcanvas body -->
+        <div class="offcanvas-body">
+            <div>
+                <ul>
+
+                    <li> <a href="#">ABOUT THIS WEBSITE</a></li>
+                    <li> <a href="#">ABOUT US</a></li>
+                    <li> <a href="#">STORES</a></li>
+                    <li> <a href="#">CONTACT</a></li>
+
+                    <!-- CAT PRODUCT LIST -->
+                    <li>
+                        <a data-bs-toggle="collapse" href="#collapseCats" role="button" aria-expanded="false" aria-controls="collapseExample">CATS</a>  
+                        <ul class="collapse" id="collapseCats">
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseCatsFood" role="button" aria-expanded="false" aria-controls="collapseExample">Food</a>
+                                <ul class="collapse" id="collapseCatsFood">
+                                    <li><a href="#">Wet Food</a></li>
+                                    <li><a href="#">Dry Food</a></li>
+                                    <li><a href="#">Snacks & Treats</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseCatsHH" role="button" aria-expanded="false" aria-controls="collapseExample">Hygiene & Health</a>
+                                <ul class="collapse" id="collapseCatsHH">
+                                    <li><a href="#">Litter</a></li>
+                                    <li><a href="#">Litter boxes</a></li>
+                                    <li><a href="#">Grooming</a></li>
+                                    <li><a href="#">Pharmacy</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseCatsAccs" role="button" aria-expanded="false" aria-controls="collapseExample">Accessories</a>
+                                <ul class="collapse" id="collapseCatsAccs">
+                                    <li><a href="#">Collars, Harnesses & Leashes</a></li>
+                                    <li><a href="#">Toys</a></li>
+                                    <li><a href="#">Bowls & Feeders</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseCatsOther" role="button" aria-expanded="false" aria-controls="collapseExample">Other supplies</a>
+                                <ul class="collapse" id="collapseCatsOther">
+                                    <li><a href="#">Crates & Containment</a></li>
+                                    <li><a href="#">Beds & Furniture</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- DOG PRODUCT LIST -->
+                    <li>
+                        <a data-bs-toggle="collapse" href="#collapseDogs" role="button" aria-expanded="false" aria-controls="collapseExample">DOGS</a>  
+                        <ul class="collapse" id="collapseDogs">
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseDogsFood" role="button" aria-expanded="false" aria-controls="collapseExample">Food</a>
+                                <ul class="collapse" id="collapseDogsFood">
+                                    <li><a href="#">Wet Food</a></li>
+                                    <li><a href="#">Dry Food</a></li>
+                                    <li><a href="#">Snacks & Treats</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseDogsHH" role="button" aria-expanded="false" aria-controls="collapseExample">Hygiene & Health</a>
+                                <ul class="collapse" id="collapseDogsHH">
+                                    <li><a href="#">Grooming</a></li>
+                                    <li><a href="#">Pharmacy</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseDogsAccs" role="button" aria-expanded="false" aria-controls="collapseExample">Accessories</a>
+                                <ul class="collapse" id="collapseDogsAccs">
+                                    <li><a href="#">Collars, Harnesses & Leashes</a></li>
+                                    <li><a href="#">Toys</a></li>
+                                    <li><a href="#">Bowls & Feeders</a></li>
+                                    <li><a href="#">Clothes</a></li>
+                                    <li><a href="#">Training</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="collapse" href="#collapseDogsOther" role="button" aria-expanded="false" aria-controls="collapseExample">Other supplies</a>
+                                <ul class="collapse" id="collapseDogsOther">
+                                    <li><a href="#">Crates & Containment</a></li>
+                                    <li><a href="#">Beds & Furniture</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-wrapper container-fluid p-0">
+        <nav class="bot-nav">
+            <ul class="horizontal-list">
+                <li class="horizontal-list__item"> 
+                    <a  href="#">About This Website</a> 
                 </li>
-                <li>
-                    <a href="#">CONTACT US</a>
+                <li class="horizontal-list__item"> 
+                    <a  href="#">About us</a> 
                 </li>
-                <li>
-                    <a href="#">ABOUT US</a>
+                <li class="horizontal-list__item"> 
+                    <a  href="#">Stores</a> 
                 </li>
-                <li>
-                    <a href="#">STORES</a>
-                </li>
-                <li>
-                    <a href="#">PAYMENTS</a>
+                <li class="horizontal-list__item"> 
+                    <a  href="#">Contact</a> 
                 </li>
             </ul>
         </nav>
+    </div>
 
-        <div>
-            <h1>
-                PET STORE
-            </h1>
-        </div>
-
-
-        <div>
-            search bar here
-        </div>
-
-        <div>
-            cart
-        </div>
-
-    </header>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="#">CATS</a>
-                <ul>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">subcategory</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">DOGS</a>
-                <ul>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <li>
-                            <a href="#">subcategory</a>
-                            <ul>
-                                <li><a href="#">subcategory</a></li>
-                                <li><a href="#">subcategory</a></li>
-                            </ul>
-                        </li>
-                    </li>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">subcategory</a>
-                        <ul>
-                            <li><a href="#">subcategory</a></li>
-                            <li><a href="#">subcategory</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    
 
 
 
@@ -130,11 +174,7 @@
 
 
 
-
-
-
-    <!-- BOOTSTRAP JS -->
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
 </body>
 </html>
