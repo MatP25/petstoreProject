@@ -4,7 +4,7 @@
 
 .header-wrapper {
     background-color: cornflowerblue;
-    min-height: 6rem;
+    min-height: 8rem;
     @include flex-properties(row,nowrap,space-between,center);
     .header__header {
         width: 100%;
@@ -24,9 +24,7 @@
                 font-size:2em;
             }
         }
-        .header__searchbar {
-            
-        }
+        
     }
 }
 

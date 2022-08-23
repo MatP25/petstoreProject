@@ -4,23 +4,30 @@
 
 .nav-wrapper {
     display: none;
-    .bot-nav {
-        background-color: rgb(236, 160, 88);
+    .top-nav {
+        background-color: rgb(167, 228, 149);
         .horizontal-list {
-            list-style: none;
             margin:0;
-            @include flex-properties(row, wrap, start, stretch);
+            @include flex-properties(row, wrap, flex-end, stretch);
             &__item {
                 padding: .5em 1.5em;
-                a {
-                    text-decoration: none;
-                }
+            }
+            &__item:nth-child(1) {
+                margin-right: auto;
             }
             
         }
     }
+    .bot-nav {
+        background-color: coral;
+    }
 }
 
+.dropdown-menu {
+    min-width: 15rem;
+    background-color: coral;
+    border-radius: 5px;
+}
 
 @media screen and (min-width: 768px) {
     .nav-wrapper {

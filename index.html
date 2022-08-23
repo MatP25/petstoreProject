@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pet Store</title>
+
+
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
@@ -18,6 +20,7 @@
 </head>
 <body>
 
+    <!-- top nav -->
     <div class="nav-wrapper container-fluid p-0">
         <nav class="top-nav">
             <ul class="horizontal-list">
@@ -40,7 +43,7 @@
             <div class="header__h1">
                 <h1>PET STORE</h1>
             </div>
-            <form class="d-flex header__searchbar"  role="search">
+            <form class="d-none d-sm-flex"  role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -60,17 +63,18 @@
             <div>
                 <ul>
 
-                    <li> <a href="#">ABOUT THIS WEBSITE</a></li>
-                    <li> <a href="#">ABOUT US</a></li>
-                    <li> <a href="#">STORES</a></li>
-                    <li> <a href="#">CONTACT</a></li>
+                    <li class="offcanvasLink"> <a href="#">ABOUT THIS WEBSITE</a></li>
+                    <li class="offcanvasLink"> <a href="#">ABOUT US</a></li>
+                    <li class="offcanvasLink"> <a href="#">STORES</a></li>
+                    <li class="offcanvasLink"> <a href="#">CONTACT</a></li>
+                    <li><hr class="divider"></li>
 
                     <!-- CAT PRODUCT LIST -->
-                    <li>
-                        <a data-bs-toggle="collapse" href="#collapseCats" role="button" aria-expanded="false" aria-controls="collapseExample">CATS</a>  
+                    <li class="offcanvasLink">
+                        <a data-bs-toggle="collapse" href="#collapseCats" role="button" aria-expanded="false" aria-controls="collapseCats">CATS</a>  
                         <ul class="collapse" id="collapseCats">
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseCatsFood" role="button" aria-expanded="false" aria-controls="collapseExample">Food</a>
+                                <a data-bs-toggle="collapse" href="#collapseCatsFood" role="button" aria-expanded="false" aria-controls="collapseCatsFood">Food</a>
                                 <ul class="collapse" id="collapseCatsFood">
                                     <li><a href="#">Wet Food</a></li>
                                     <li><a href="#">Dry Food</a></li>
@@ -78,7 +82,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseCatsHH" role="button" aria-expanded="false" aria-controls="collapseExample">Hygiene & Health</a>
+                                <a data-bs-toggle="collapse" href="#collapseCatsHH" role="button" aria-expanded="false" aria-controls="collapseCatsHH">Hygiene & Health</a>
                                 <ul class="collapse" id="collapseCatsHH">
                                     <li><a href="#">Litter</a></li>
                                     <li><a href="#">Litter boxes</a></li>
@@ -87,7 +91,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseCatsAccs" role="button" aria-expanded="false" aria-controls="collapseExample">Accessories</a>
+                                <a data-bs-toggle="collapse" href="#collapseCatsAccs" role="button" aria-expanded="false" aria-controls="collapseCatsAccs">Accessories</a>
                                 <ul class="collapse" id="collapseCatsAccs">
                                     <li><a href="#">Collars, Harnesses & Leashes</a></li>
                                     <li><a href="#">Toys</a></li>
@@ -95,7 +99,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseCatsOther" role="button" aria-expanded="false" aria-controls="collapseExample">Other supplies</a>
+                                <a data-bs-toggle="collapse" href="#collapseCatsOther" role="button" aria-expanded="false" aria-controls="collapseCatsOther">Other supplies</a>
                                 <ul class="collapse" id="collapseCatsOther">
                                     <li><a href="#">Crates & Containment</a></li>
                                     <li><a href="#">Beds & Furniture</a></li>
@@ -104,12 +108,14 @@
                         </ul>
                     </li>
 
+                    <li><hr class="divider"></li>
+
                     <!-- DOG PRODUCT LIST -->
-                    <li>
-                        <a data-bs-toggle="collapse" href="#collapseDogs" role="button" aria-expanded="false" aria-controls="collapseExample">DOGS</a>  
+                    <li class="offcanvasLink">
+                        <a data-bs-toggle="collapse" href="#collapseDogs" role="button" aria-expanded="false" aria-controls="collapseDogs">DOGS</a>  
                         <ul class="collapse" id="collapseDogs">
-                            <li>
-                                <a data-bs-toggle="collapse" href="#collapseDogsFood" role="button" aria-expanded="false" aria-controls="collapseExample">Food</a>
+                            <li >
+                                <a data-bs-toggle="collapse" href="#collapseDogsFood" role="button" aria-expanded="false" aria-controls="collapseDogsFood">Food</a>
                                 <ul class="collapse" id="collapseDogsFood">
                                     <li><a href="#">Wet Food</a></li>
                                     <li><a href="#">Dry Food</a></li>
@@ -117,14 +123,14 @@
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseDogsHH" role="button" aria-expanded="false" aria-controls="collapseExample">Hygiene & Health</a>
+                                <a data-bs-toggle="collapse" href="#collapseDogsHH" role="button" aria-expanded="false" aria-controls="collapseDogsHH">Hygiene & Health</a>
                                 <ul class="collapse" id="collapseDogsHH">
                                     <li><a href="#">Grooming</a></li>
                                     <li><a href="#">Pharmacy</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseDogsAccs" role="button" aria-expanded="false" aria-controls="collapseExample">Accessories</a>
+                                <a data-bs-toggle="collapse" href="#collapseDogsAccs" role="button" aria-expanded="false" aria-controls="collapseDogsAccs">Accessories</a>
                                 <ul class="collapse" id="collapseDogsAccs">
                                     <li><a href="#">Collars, Harnesses & Leashes</a></li>
                                     <li><a href="#">Toys</a></li>
@@ -134,7 +140,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" href="#collapseDogsOther" role="button" aria-expanded="false" aria-controls="collapseExample">Other supplies</a>
+                                <a data-bs-toggle="collapse" href="#collapseDogsOther" role="button" aria-expanded="false" aria-controls="collapseDogsOther">Other supplies</a>
                                 <ul class="collapse" id="collapseDogsOther">
                                     <li><a href="#">Crates & Containment</a></li>
                                     <li><a href="#">Beds & Furniture</a></li>
@@ -142,36 +148,148 @@
                             </li>
                         </ul>
                     </li>
+                    <li><hr class="divider"></li>
+
                 </ul>
+
+                <form class="d-flex px-4"  role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
         </div>
     </div>
 
-    <div class="nav-wrapper container-fluid p-0">
-        <nav class="bot-nav">
-            <ul class="horizontal-list">
-                <li class="horizontal-list__item"> 
-                    <a  href="#">About This Website</a> 
-                </li>
-                <li class="horizontal-list__item"> 
-                    <a  href="#">About us</a> 
-                </li>
-                <li class="horizontal-list__item"> 
-                    <a  href="#">Stores</a> 
-                </li>
-                <li class="horizontal-list__item"> 
-                    <a  href="#">Contact</a> 
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <!-- nav under header -->
+    <nav class="navbar navbar-expand-md nav-wrapper p-0">
+        <div class="container-fluid bot-nav">
+            
+            <div>
+                <ul class="navbar-nav">
+
+                    <!-- Cat products list -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Cats
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatFoodNav" aria-expanded="false" aria-controls="collapseCatFoodNav">
+                                    Food
+                                </button>
+                                <ul class="collapse" id="collapseCatFoodNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Wet Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Dry Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Snacks</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatHhNav" aria-expanded="false" aria-controls="collapseCatHhNav">
+                                    Hygiene & Health
+                                </button>
+                                <ul class="collapse" id="collapseCatHhNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Litter</a></li>
+                                    <li><a class="dropdown-item" href="#">Litter boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Grooming</a></li>
+                                    <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatAccessoriesNav" aria-expanded="false" aria-controls="collapseCatAccessoriesNav">
+                                    Accessories
+                                </button>
+                                <ul class="collapse" id="collapseCatAccessoriesNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Collars, Harnesses & Leashes</a></li>
+                                    <li><a class="dropdown-item" href="#">Toys</a></li>
+                                    <li><a class="dropdown-item" href="#">Bowls & Feeders</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatOtherNav" aria-expanded="false" aria-controls="collapseCatOtherNav">
+                                    Other Supplies
+                                </button>
+                                <ul class="collapse" id="collapseCatOtherNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Crates & Containment</a></li>
+                                    <li><a class="dropdown-item" href="#">Beds & Furniture</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Dog products list -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Dogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDogFoodNav" aria-expanded="false" aria-controls="collapseDogFoodNav">
+                                    Food
+                                </button>
+                                <ul class="collapse" id="collapseDogFoodNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Wet Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Dry Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Snacks & Treats</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDogHhNav" aria-expanded="false" aria-controls="collapseDogHhNav">
+                                    Hygiene & Health
+                                </button>
+                                <ul class="collapse" id="collapseDogHhNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Grooming</a></li>
+                                    <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDogAccessoriesNav" aria-expanded="false" aria-controls="collapseDogAccessoriesNav">
+                                    Accessories
+                                </button>
+                                <ul class="collapse" id="collapseDogAccessoriesNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Collars, Harnesses & Leashes</a></li>
+                                    <li><a class="dropdown-item" href="#">Toys</a></li>
+                                    <li><a class="dropdown-item" href="#">Bowls & Feeders</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                                    <li><a class="dropdown-item" href="#">Training</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="link-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDogOtherNav" aria-expanded="false" aria-controls="collapseDogOtherNav">
+                                    Other Supplies
+                                </button>
+                                <ul class="collapse" id="collapseDogOtherNav">
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Crates & Containment</a></li>
+                                    <li><a class="dropdown-item" href="#">Beds & Furniture</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     
 
 
 
-
-
+    
 
 
     <!-- JavaScript Bundle with Popper -->

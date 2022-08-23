@@ -1,0 +1,14 @@
+////////////////////////////////////
+@use "../1-abstracts/" as *;
+////////////////////////////////////
+
+
+.link-btn {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: .3rem;
+    padding: .4rem .8rem;
+    border: none;
+    text-align: start;
+    background-color: transparent;
+}

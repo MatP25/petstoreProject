@@ -1,3 +1,28 @@
 ////////////////////////////////////
 @use "../1-abstracts/" as *;
 ////////////////////////////////////
+
+
+.offcanvas a {
+    color: rgb(230, 230, 230);
+}
+
+.offcanvasLink {
+    display:block;
+    padding: .5rem 0;
+    li {
+        margin: 1rem 0;
+    }
+    a {
+        text-decoration: none;
+        
+    }
+}
+
+.offcanvas .divider {
+    color: rgb(230, 230, 230);
+}
+
+#offcanvasMenuLabel {
+    color: white;
+}
