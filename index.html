@@ -43,7 +43,7 @@
             <div class="header__h1">
                 <h1>PET STORE</h1>
             </div>
-            <form class="d-none d-sm-flex"  role="search">
+            <form class="d-flex searchbar"  role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -54,7 +54,7 @@
     <!-- OFFCANVAS MENU -->
     <div class="offcanvas offcanvas-start text-bg-dark " tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasMenuLabel">PET STORE</h5>
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">PET STORE > MENU</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -62,7 +62,6 @@
         <div class="offcanvas-body">
             <div>
                 <ul>
-
                     <li class="offcanvasLink"> <a href="#">ABOUT THIS WEBSITE</a></li>
                     <li class="offcanvasLink"> <a href="#">ABOUT US</a></li>
                     <li class="offcanvasLink"> <a href="#">STORES</a></li>
@@ -285,9 +284,217 @@
         </div>
     </nav>
 
+    <aside class="banner-container">
+        <div class="banner" id="banner-1">
+            <h2 class="banner__heading"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, ad? </h2>
+        </div>
+
+        <div class="banner" id="banner-2">
+            <h2 class="banner__heading"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, ad? </h2>
+        </div>
+    </aside>
+
+    <main>
+
+    <section class="container-fluid">
+
+        <div class="content-divider">
+            
+            <h3>All products</h3>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filters
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item filter__category">
+                        <label for="sortByPrice">Sort By Price</label>
+                        <select name="sortByPrice" id="sortByPrice" class="">
+                            <option value="LtoH">Low to high</option>
+                            <option value="HtoL">High to low</option>
+                        </select>
+                    </li>
+                    <li class="dropdown-item filter__category">
+                        <label for="sortByName">Sort By Name</label>
+                        <select name="sortByName" id="sortByName" class="">
+                            <option value="AtoZ">A - Z</option>
+                            <option value="ZtoA">Z - A</option>
+                        </select>
+                    </li>
+                    <li class="dropdown-item filter__category">
+                        <label for="sortByBrand">Sort By Brand</label>
+                        <select name="sortByBrand" id="sortByBrand" class="">
+                            <option value="brand1">Brand 1</option>
+                            <option value="brand2">Brand 2</option>
+                            <option value="brand2">Brand 3</option>
+                        </select>
+                    </li>
+                    <li class="dropdown-item filter__category">
+                        <label for="priceRangeMin">Price: Min</label>
+                        <input type="range" min="1" max="10000" value="1" id="priceRangeMin"> <span data-priceRangeMin></span>
+                    </li>
+                    <li class="dropdown-item filter__category">
+                        <label for="priceRangeMax">Price: Max</label>
+                        <input type="range" min="1" max="10000" value="10000" id="priceRangeMax"> <span data-priceRangeMax></span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="https://picsum.photos/200" alt="">
+                <h5 class="card__title">Product Name</h5>
+                <div class="card__details">
+                    <div class="card__price"><span data-productPrice>Price</span></div>
+                    <button data-addToCart>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="container-fluid">
+            <div class="content-divider">
+                <h3>CATEGORY</h3>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filters
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item filter__category">
+                            <label for="sortByPrice2">Sort By Price</label>
+                            <select name="sortByPrice2" id="sortByPrice2" class="">
+                                <option value="LtoH">Low to high</option>
+                                <option value="HtoL">High to low</option>
+                            </select>
+                        </li>
+                        <li class="dropdown-item filter__category">
+                            <label for="sortByName2">Sort By Name</label>
+                            <select name="sortByName2" id="sortByName2" class="">
+                                <option value="AtoZ">A - Z</option>
+                                <option value="ZtoA">Z - A</option>
+                            </select>
+                        </li>
+                        <li class="dropdown-item filter__category">
+                            <label for="sortByBrand2">Sort By Brand</label>
+                            <select name="sortByBrand2" id="sortByBrand2" class="">
+                                <option value="brand1">Brand 1</option>
+                                <option value="brand2">Brand 2</option>
+                                <option value="brand3">Brand 3</option>
+                            </select>
+                        </li>
+                        <li class="dropdown-item filter__category">
+                            <label for="priceRangeMin2">Price: Min</label>
+                            <input type="range" min="1" max="10000" value="1" id="priceRangeMin2"> <span data-priceRangeMin></span>
+                        </li>
+                        <li class="dropdown-item filter__category">
+                            <label for="priceRangeMax2">Price: Max</label>
+                            <input type="range" min="1" max="10000" value="10000" id="priceRangeMax2"> <span data-priceRangeMax></span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card__img" src="https://picsum.photos/200" alt="">
+                    <h5 class="card__title">Product Name</h5>
+                    <div class="card__details">
+                        <div class="card__price"><span data-productPrice>Price</span></div>
+                        <button data-addToCart>Add To Cart</button>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card__img" src="https://picsum.photos/200" alt="">
+                    <h5 class="card__title">Product Name</h5>
+                    <div class="card__details">
+                        <div class="card__price"><span data-productPrice>Price</span></div>
+                        <button data-addToCart>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     
+    
+    <aside class="banner-container">
+        <div class="banner" id="banner-3">
+            <h2 class="banner__heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatum.</h2>
 
-
+        </div>
+    </aside>
 
     
 

@@ -29,6 +29,12 @@
     border-radius: 5px;
 }
 
+.searchbar {
+    width: clamp(14rem, 40%, 50%);
+    margin-left: 2%;
+}
+
+
 @media screen and (min-width: 768px) {
     .nav-wrapper {
         display: block;

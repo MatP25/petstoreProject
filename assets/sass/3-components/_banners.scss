@@ -1,0 +1,58 @@
+////////////////////////////////////
+@use "../1-abstracts/" as *;
+////////////////////////////////////
+
+
+.banner {
+    
+    margin: clamp(5px, 1.5%, 2em) 0;
+    
+    background-color: coral;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    &__heading {
+        color:whitesmoke;
+    }
+    
+}
+
+.banner-container {
+    @include flex-properties(row,wrap,center,stretch);
+    .banner__heading {
+        padding: 1.2rem;
+        max-width: 12em;
+    }
+    #banner-1 {
+        width: 30%;
+        min-width: 32ch;
+        flex-grow: 1;
+        background-image: url("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg");
+        min-height: 10rem;
+        justify-content: start;
+    }
+    
+    #banner-2 {
+        width: 65%;
+        flex-grow: 3;
+        background-image: url("https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        min-height: 15rem;
+        justify-content: end;
+    }
+
+    #banner-3 {
+        width: 100%;
+        background-image: url("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg");
+        min-height: 10rem;
+        justify-content: center;
+        h2 {
+            text-align: center;
+        }
+    }
+
+    
+}
+
+

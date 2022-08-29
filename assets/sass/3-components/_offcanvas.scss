@@ -3,10 +3,6 @@
 ////////////////////////////////////
 
 
-.offcanvas a {
-    color: rgb(230, 230, 230);
-}
-
 .offcanvasLink {
     display:block;
     padding: .5rem 0;
@@ -15,7 +11,7 @@
     }
     a {
         text-decoration: none;
-        
+        color: rgb(230, 230, 230);
     }
 }
 

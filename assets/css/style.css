@@ -76,6 +76,55 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
   color: rgb(33, 37, 35);
 }
 
+.banner {
+  margin: clamp(5px, 1.5%, 2em) 0;
+  background-color: coral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.banner__heading {
+  color: whitesmoke;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.banner-container .banner__heading {
+  padding: 1.2rem;
+  max-width: 12em;
+}
+.banner-container #banner-1 {
+  width: 30%;
+  min-width: 32ch;
+  flex-grow: 1;
+  background-image: url("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg");
+  min-height: 10rem;
+  justify-content: start;
+}
+.banner-container #banner-2 {
+  width: 65%;
+  flex-grow: 3;
+  background-image: url("https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  min-height: 15rem;
+  justify-content: end;
+}
+.banner-container #banner-3 {
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg");
+  min-height: 10rem;
+  justify-content: center;
+}
+.banner-container #banner-3 h2 {
+  text-align: center;
+}
+
 .link-btn {
   font-weight: 600;
   font-size: 1rem;
@@ -86,8 +135,32 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
   background-color: transparent;
 }
 
-.offcanvas a {
-  color: rgb(230, 230, 230);
+.card-container {
+  padding: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border: 2px solid rgb(28, 27, 63);
+}
+.card-container .card {
+  flex: 0 0 auto;
+  width: 25ch;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(182, 182, 182);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-container .card__details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .offcanvasLink {
@@ -99,6 +172,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
 }
 .offcanvasLink a {
   text-decoration: none;
+  color: rgb(230, 230, 230);
 }
 
 .offcanvas .divider {
@@ -107,6 +181,27 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
 
 #offcanvasMenuLabel {
   color: white;
+}
+
+.filter__category {
+  padding: 5px;
+}
+
+input[type=range] {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.content-divider {
+  background-color: coral;
+  padding: 1.5% 1rem;
+  margin-bottom: clamp(5px, 1.5%, 2.5em);
+  display: flex;
+  justify-content: space-between;
+}
+.content-divider h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .header-wrapper {
@@ -122,7 +217,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -135,7 +230,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
 }
 .header-wrapper .header__header .header__h1 {
   margin-right: auto;
-  padding: 1em;
+  padding: 0.75em;
 }
 .header-wrapper .header__header .header__h1 h1 {
   text-align: center;
@@ -147,6 +242,10 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
     display: none;
   }
 }
+section {
+  margin-bottom: clamp(5px, 1.5%, 2.5em);
+}
+
 .nav-wrapper {
   display: none;
 }
@@ -175,6 +274,11 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
   min-width: 15rem;
   background-color: coral;
   border-radius: 5px;
+}
+
+.searchbar {
+  width: clamp(14rem, 40%, 50%);
+  margin-left: 2%;
 }
 
 @media screen and (min-width: 768px) {
