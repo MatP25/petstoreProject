@@ -22,3 +22,22 @@
         }
     }
 }
+
+.card-category {
+    flex: 0 0 auto;
+    width: clamp(23ch, 27ch, 32ch);
+    border: 1px solid rgb(182, 182, 182);
+    @include flex-properties(column, nowrap, space-between, center);
+    .card__title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-container {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        justify-content: space-evenly;
+    }
+}

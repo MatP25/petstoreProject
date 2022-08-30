@@ -163,6 +163,28 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
   width: 100%;
 }
 
+.card-category {
+  flex: 0 0 auto;
+  width: 27ch;
+  border: 1px solid rgb(182, 182, 182);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-category .card__title {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+  }
+}
 .offcanvasLink {
   display: block;
   padding: 0.5rem 0;
@@ -202,6 +224,47 @@ input[type=range] {
 .content-divider h3 {
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+.footer {
+  background-color: cadetblue;
+}
+
+.newsletter {
+  background-color: mediumslateblue;
+  display: grid;
+  grid-template: auto auto/auto auto auto;
+  padding: clamp(1%, 1rem, 2.5rem);
+}
+.newsletter__label {
+  margin: 0 auto;
+  padding-bottom: 0.75rem;
+  grid-column: 1/span 3;
+}
+.newsletter__input {
+  grid-column: 1/span 2;
+  width: 70%;
+  margin: 0 auto;
+}
+.newsletter__submit {
+  max-width: 150px;
+  padding: 0.15rem 1.25rem;
+  grid-column: 3/3;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+.socialmedia__item {
+  margin: 0.5rem;
+}
+.socialmedia__item i {
+  font-size: 2.5em;
 }
 
 .header-wrapper {

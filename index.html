@@ -422,68 +422,38 @@
         </section>
 
         <section class="container-fluid">
-            <div class="content-divider">
-                <h3>CATEGORY</h3>
-
-                <div class="dropdown">
-                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Filters
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item filter__category">
-                            <label for="sortByPrice2">Sort By Price</label>
-                            <select name="sortByPrice2" id="sortByPrice2" class="">
-                                <option value="LtoH">Low to high</option>
-                                <option value="HtoL">High to low</option>
-                            </select>
-                        </li>
-                        <li class="dropdown-item filter__category">
-                            <label for="sortByName2">Sort By Name</label>
-                            <select name="sortByName2" id="sortByName2" class="">
-                                <option value="AtoZ">A - Z</option>
-                                <option value="ZtoA">Z - A</option>
-                            </select>
-                        </li>
-                        <li class="dropdown-item filter__category">
-                            <label for="sortByBrand2">Sort By Brand</label>
-                            <select name="sortByBrand2" id="sortByBrand2" class="">
-                                <option value="brand1">Brand 1</option>
-                                <option value="brand2">Brand 2</option>
-                                <option value="brand3">Brand 3</option>
-                            </select>
-                        </li>
-                        <li class="dropdown-item filter__category">
-                            <label for="priceRangeMin2">Price: Min</label>
-                            <input type="range" min="1" max="10000" value="1" id="priceRangeMin2"> <span data-priceRangeMin></span>
-                        </li>
-                        <li class="dropdown-item filter__category">
-                            <label for="priceRangeMax2">Price: Max</label>
-                            <input type="range" min="1" max="10000" value="10000" id="priceRangeMax2"> <span data-priceRangeMax></span>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <img class="card__img" src="https://picsum.photos/200" alt="">
-                    <h5 class="card__title">Product Name</h5>
-                    <div class="card__details">
-                        <div class="card__price"><span data-productPrice>Price</span></div>
-                        <button data-addToCart>Add To Cart</button>
-                    </div>
-                </div>
             
-                <div class="card">
-                    <img class="card__img" src="https://picsum.photos/200" alt="">
-                    <h5 class="card__title">Product Name</h5>
-                    <div class="card__details">
-                        <div class="card__price"><span data-productPrice>Price</span></div>
-                        <button data-addToCart>Add To Cart</button>
-                    </div>
-                </div>
+            <div class="content-divider">
+                <h3>CATEGORIES</h3>
             </div>
 
+            <div class="card-container">
+                
+                
+                <div class="card-category">
+                    <img class="card__img" src="https://picsum.photos/250" alt="">
+                    <h5 class="card__title">CATEGORY NAME</h5>
+                </div>
+
+                <div class="card-category">
+                    <img class="card__img" src="https://picsum.photos/250" alt="">
+                    <h5 class="card__title">CATEGORY NAME</h5>
+                </div>
+                <div class="card-category">
+                    <img class="card__img" src="https://picsum.photos/250" alt="">
+                    <h5 class="card__title">CATEGORY NAME</h5>
+                </div>
+                <div class="card-category">
+                    <img class="card__img" src="https://picsum.photos/250" alt="">
+                    <h5 class="card__title">CATEGORY NAME</h5>
+                </div>
+                <div class="card-category">
+                    <img class="card__img" src="https://picsum.photos/250" alt="">
+                    <h5 class="card__title">CATEGORY NAME</h5>
+                </div>
+                
+            </div>
+            
         </section>
 
     </main>
@@ -496,7 +466,44 @@
         </div>
     </aside>
 
-    
+    <footer class="container-fluid footer">
+        <div class="row">
+
+            <form class="newsletter col-12" action="#">
+                <label class="newsletter__label" for="newsletterSub">Subscribe to our newsletter</label>
+                <input class="newsletter__input" type="text" name="newsletterSub" id="newsletterSub" placeholder="Enter your email here">
+                <input class="newsletter__submit" type="submit" value="Subscribe">
+            </form>
+            
+            <ul class="socialmedia col-12">
+                <li class="socialmedia__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="socialmedia__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="socialmedia__item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="socialmedia__item"><a href="#"><i class="fa-solid fa-share-nodes"></i></a></li>
+            </ul>
+
+            <div class="footer__info">
+                <div >
+                    <p>Address: Some Street 999, Random City</p>
+                    <p>Open Everyday:  9am to 20pm</p>
+                    <p>0011 222 333</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25389.470620711876!2d-12.691821627163678!3d-37.302626560267385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25bacd1328955ed%3A0xdc6acf7233e535e3!2sIsla%20Inaccesible!5e0!3m2!1ses-419!2suy!4v1661878818521!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer__links">
+                <ul>
+                    <li><a href="#">About this website</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- JavaScript Bundle with Popper -->
