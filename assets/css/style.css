@@ -229,6 +229,28 @@ input[type=range] {
 .footer {
   background-color: cadetblue;
 }
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__content .infomap {
+  max-width: 900px;
+  flex-grow: 1;
+}
+.footer__content .infomap .map-container {
+  max-width: 800px;
+}
+.footer__content .infomap .map-container iframe {
+  width: 100%;
+  max-height: 15rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
 
 .newsletter {
   background-color: mediumslateblue;
