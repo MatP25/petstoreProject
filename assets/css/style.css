@@ -185,6 +185,18 @@ h1, h2, h3, h4, h5, h6, a, p, button, li, label {
     justify-content: space-evenly;
   }
 }
+.cart__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 1px solid #CCC;
+  width: 35ch;
+}
+.cart__card p {
+  padding: 0.5rem;
+}
+
 .offcanvasLink {
   display: block;
   padding: 0.5rem 0;

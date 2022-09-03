@@ -41,3 +41,15 @@
         justify-content: space-evenly;
     }
 }
+
+.cart__card {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid #CCC;
+    width: 35ch;
+    p {
+        padding: .5rem;
+    }
+}
